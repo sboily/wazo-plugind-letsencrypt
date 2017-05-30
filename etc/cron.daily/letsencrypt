@@ -1,1 +1,1 @@
-/opt/letsencrypt/letsencrypt-auto renew >> /var/log/letsencrypt/renewal.log
+/opt/letsencrypt/certbot-auto renew -q >> /var/log/letsencrypt/renewal.log
