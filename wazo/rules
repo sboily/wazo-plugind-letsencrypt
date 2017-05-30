@@ -8,17 +8,16 @@ case "$1" in
 
     package)
         cp -R etc ${pkgdir}/
+        /usr/bin/git clone https://github.com/certbot/certbot ${pkgdir}/opt/letsencrypt --depth=1
         ;;
 
     install)
+        chgrp www-data /etc/letsencrypt
         ln -s /etc/nginx/locations/http-available/letsencrypt /etc/nginx/locations/http-enabled
         systemctl restart nginx
-        git clone https://github.com/certbot/certbot /opt/letsencrypt --depth=1
-        chgrp www-data /etc/letsencrypt
         ;;
 
     uninstall)
-        rm -rf /opt/letsencrypt
         rm /etc/nginx/locations/http-enabled/letsencrypt
         systemctl restart wazo-admin-ui
         ;;
