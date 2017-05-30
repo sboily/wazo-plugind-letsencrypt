@@ -6,4 +6,6 @@ display_name: Let's encrypt
 tags:
   - beta
   - application
+debian_depends:
+  - git
 homepage: https://github.com/sboily/wazo-plugind-letsencrypt
