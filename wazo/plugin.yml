@@ -1,0 +1,9 @@
+name: letsencrypt
+namespace: quintana
+version: 0.0.1
+author: Sylvain Boily
+display_name: Let's encrypt
+tags:
+  - beta
+  - application
+homepage: https://github.com/sboily/wazo-plugind-letsencrypt
