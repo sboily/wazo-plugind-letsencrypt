@@ -1,6 +1,6 @@
 Add let's encrypt certificate.
 
-    /opt/letsencrypt/certbot-auto certonly -n -d demo.wazo.community
+    /opt/letsencrypt/certbot-auto certonly -d demo.wazo.community
 
 Check documentation.
 
